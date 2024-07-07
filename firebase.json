@@ -1,0 +1,25 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "takecare-290c9",
+                    "appId": "1:997359602496:android:e558f190ffb057e36088a5",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "takecare-290c9",
+                    "configurations": {
+                        "android": "1:997359602496:android:e558f190ffb057e36088a5",
+                        "ios": "1:997359602496:ios:8c06804966e736b46088a5",
+                        "macos": "1:997359602496:ios:8c06804966e736b46088a5",
+                        "web": "1:997359602496:web:cb590ae42060aab46088a5",
+                        "windows": "1:997359602496:web:c59583d89cf194586088a5"
+                    }
+                }
+            }
+        }
+    }
+}
