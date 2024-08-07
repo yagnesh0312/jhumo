@@ -62,8 +62,8 @@ class IntroPage2 extends StatelessWidget {
         ),
         child: Container(
           color: Get.isDarkMode
-              ? Themer.dark.withOpacity(0.7)
-              : Themer.light.withOpacity(0.7),
+              ? Themer.dark.withOpacity(0.5)
+              : Themer.light.withOpacity(0.5),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             // Expanded(
@@ -86,13 +86,15 @@ class IntroPage2 extends StatelessWidget {
                   GradientText(
                     "Find your favorite",
                     style: Get.textTheme.headlineMedium!.copyWith(fontSize: 70),
-                    colors: _themeController.isDark
+                    colors: Get.isDarkMode
                         ? Themer.gradientDark.colors
                         : Themer.gradientLight.colors,
                   ),
                   Row(
                     children: [
-                      Text("MUSIC", style: Get.textTheme.headlineMedium!.copyWith(fontSize: 70)),
+                      Text("MUSIC",
+                          style: Get.textTheme.headlineMedium!.copyWith(
+                              fontSize: 70, fontWeight: FontWeight.bold)),
                       GradientText(
                         ".",
                         style: TextStyle(
